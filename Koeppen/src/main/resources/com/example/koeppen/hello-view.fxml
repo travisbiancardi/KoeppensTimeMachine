@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.koeppen.HelloController">
+   <children>
+      <VBox AnchorPane.bottomAnchor="-0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane maxHeight="150.0">
+               <children>
+                  <VBox maxHeight="150.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tuition:" wrappingWidth="52.78645706176758">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin></Text>
+                              <TextField fx:id="tuition" onKeyReleased="#onCalculate" prefHeight="26.0" prefWidth="67.0" text="44796" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Credits:">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin></Text>
+                              <TextField fx:id="credits" onKeyReleased="#onCalculate" prefHeight="26.0" prefWidth="67.0" text="19">
+                                 <padding>
+                                    <Insets left="15.0" right="15.0" top="10.0" />
+                                 </padding></TextField>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane maxHeight="150.0">
+               <children>
+                  <HBox maxHeight="100.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Minutes" textAlignment="CENTER" />
+                              <TextField fx:id="minutes" onKeyReleased="#onCalculate" text="1" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Students" textAlignment="CENTER" />
+                              <TextField fx:id="students" onKeyReleased="#onCalculate" text="14" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane>
+               <children>
+                  <VBox AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+                     <children>
+                        <HBox prefHeight="65.0" prefWidth="570.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cost:" wrappingWidth="38.74218559265137">
+                                 <HBox.margin>
+                                    <Insets left="225.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Text fx:id="cost" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="52.78645706176758" />
+                           </children>
+                        </HBox>
+                        <Text fx:id="enjoy" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <VBox.margin>
+                              <Insets left="175.0" />
+                           </VBox.margin></Text>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
